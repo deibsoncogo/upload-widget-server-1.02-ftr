@@ -1,7 +1,7 @@
 import { fastifyCors } from "@fastify/cors"
-import fastifyMultipart from "@fastify/multipart"
-import fastifySwagger from "@fastify/swagger"
-import fastifySwaggerUi from "@fastify/swagger-ui"
+import { fastifyMultipart } from "@fastify/multipart"
+import { fastifySwagger } from "@fastify/swagger"
+import { fastifySwaggerUi } from "@fastify/swagger-ui"
 import { fastify } from "fastify"
 import {
   hasZodFastifySchemaValidationErrors,

@@ -26,7 +26,7 @@ export async function uploadImage(
   }
 
   const { key, url } = await uploadFileToStorage({
-    folder: "imagens",
+    folder: "images",
     fileName,
     contentType,
     contentStream,
