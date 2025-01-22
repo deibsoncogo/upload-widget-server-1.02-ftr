@@ -1,0 +1,14 @@
+name: "upload-widget-server-nvl2-ftr"
+
+services:
+  databaseTest:
+    container_name: "databaseTest"
+    image: bitnami/postgresql:latest
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=uploadWidgetServer
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=uploadWidgetServerDBTest
+    volumes:
+      - "./docker:/docker-entrypoint-initdb.d"

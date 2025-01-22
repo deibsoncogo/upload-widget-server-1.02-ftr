@@ -24,6 +24,7 @@
     "dev": "tsx --env-file .env src/infra/http/server.ts",
     "dev:watch": "tsx watch --env-file .env src/infra/http/server.ts",
     "test": "dotenv -e .env.test -- vitest run",
+    "test:docker": "docker compose -f \"docker-compose-test.yml\" up -d",
     "pretest": "npm run db:migrate:test",
     "pretest:watch": "npm run db:migrate:test"
   },
