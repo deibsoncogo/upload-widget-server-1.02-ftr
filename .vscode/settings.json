@@ -7,5 +7,5 @@
     "source.organizeImports.biome": "explicit"
   },
   "editor.defaultFormatter": "biomejs.biome",
-  "cSpell.words": ["postgres", "uuidv7"]
+  "cSpell.words": ["cloudflare", "postgres", "uuidv7"]
 }
