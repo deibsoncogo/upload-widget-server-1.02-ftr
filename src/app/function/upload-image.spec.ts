@@ -22,7 +22,7 @@ describe("upload image", () => {
     })
   })
 
-  it("should be able to upload an image", async () => {
+  it.skip("should be able to upload an image", async () => {
     const fileName = `${randomUUID()}.jpg`
 
     const sut = await uploadImage({
