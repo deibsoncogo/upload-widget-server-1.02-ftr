@@ -15,10 +15,7 @@
     "type": "git",
     "url": "https://github.com/deibsoncogo/upload-widget-server-nvl2-ftr"
   },
-  "keywords": [
-    "rocketseat",
-    "pós-graduação"
-  ],
+  "keywords": ["rocketseat", "pós-graduação"],
   "scripts": {
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -26,6 +23,7 @@
     "db:studio": "drizzle-kit studio",
     "dev": "tsx --env-file .env src/infra/http/server.ts",
     "dev:watch": "tsx watch --env-file .env src/infra/http/server.ts",
+    "build": "tsup-node",
     "test": "dotenv -e .env.test -- vitest run",
     "test:watch": "dotenv -e .env.test -- vitest",
     "test:docker": "docker compose -f \"docker-compose-test.yml\"",
@@ -38,6 +36,7 @@
     "@types/node": "^22.10.7",
     "dotenv-cli": "^8.0.0",
     "drizzle-kit": "^0.30.2",
+    "tsup": "^8.3.6",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",
     "vite-tsconfig-paths": "^5.1.4",
